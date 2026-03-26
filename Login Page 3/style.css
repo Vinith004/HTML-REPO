@@ -1,0 +1,86 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background-color: rgb(75, 0, 179);
+    height: 100vh;
+}
+.container{
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50% );
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+
+}
+.title{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.box1{
+    position: relative;
+}
+.icon1{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
+.name{
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: #e7e7e7;
+    padding: 10px;
+    width: 100%;
+    padding-left: 40px;
+}
+.password{
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: #e7e7e7;
+    padding: 10px;
+    width: 100%;
+    width: 100%;
+    padding-left: 40px;
+}
+.remember{
+    text-align: start;
+    margin-bottom: 15px;
+}
+.login{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: red;
+    background-image: linear-gradient(to right, yellow, red);
+    color: white;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.box2{
+    position: relative;
+}
+.icon2{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
+.password2{
+}
+.sign{
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+    text-align: center;
+}
+.signup{
+    color: rgb(0, 128, 255);
+}
