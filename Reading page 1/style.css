@@ -1,0 +1,25 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+    "header" "header";
+}
+
+header {}
+
+footer {
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+}
+
+.contentbar {
+    display: flex;
+}
