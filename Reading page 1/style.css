@@ -4,32 +4,54 @@
     box-sizing: 0;
 }
 
+html {
+    overflow: hidden;
+}
+
 body {
+    overflow: hidden;
+    height: 100vh;
     display: grid;
     grid-template-areas:
         "header"
-        "contentbar"
+        "container"
         "footer";
     grid-template-rows: 50px 1fr 50px;
-    height: 100vh;
 }
 
 .header {
     grid-area: header;
+    background-color: rgb(255, 140, 0);
+    padding: 10px;
 }
 
-.contentbar {
-    grid-area: contentbar;
+.container {
+    height: calc(100vh - 100px);
+    grid-area: container;
     display: flex;
 }
 
 .sidebar {
-    width: 300px;
+    background-color: bisque;
+    overflow: auto;
+    padding: 10px;
+    width: 15%;
 }
 
-.content {}
+.list {
+    padding: 10PX;
+    list-style: none;
+}
+
+.contentbar {
+    padding: 10px;
+    width: 100%;
+    overflow: auto;
+}
 
 .footer {
     grid-area: footer;
+    background-color: rgb(255, 140, 0);
+    padding: 10px;
     text-align: center;
 }
