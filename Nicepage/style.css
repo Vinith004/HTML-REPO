@@ -12,7 +12,6 @@ body {
 header {
     display: flex;
     padding: 5px;
-    width: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -71,8 +70,9 @@ header div {
 .box2 {
     padding: 130px;
     display: flex;
-    text-align: center;
+    justify-content: center;
     background-color: bisque;
+    gap: 100px;
 }
 
 .para1 {
@@ -101,7 +101,7 @@ header div {
     color: black;
 }
 
-.link1:hover{
+.link1:hover {
     color: rgb(255, 140, 0);
 }
 
@@ -116,14 +116,11 @@ header div {
 }
 
 .box21 {
-    padding-left: 100px;
-    text-align: left;
-    width: 50%;
-
+    width: 500px
 }
 
 .box22 {
-    width: 50%;
+    width: 400px
 }
 
 .img1 {
@@ -135,11 +132,12 @@ header div {
     background-color: rgb(255, 119, 0);
     padding: 130px;
     display: flex;
-    text-align: center;
+    justify-content: center;
+    gap: 100px;
 }
 
 .box31 {
-    width: 50%;
+    width: 500px;
 }
 
 .img2 {
@@ -148,15 +146,18 @@ header div {
 }
 
 .box32 {
-    text-align: left;
-    width: 50%;
+    width: 400px;
 }
 
 .para21 {
     color: white;
 }
 
+
+
 .linkposition {
+    width: 1400px;
+    text-align: center;
     margin-left: 150px;
     margin-bottom: 50px;
 }
@@ -172,9 +173,12 @@ header div {
 }
 
 .boximg {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1400px;
+    margin: 50px auto;
 }
 
 .img3 {
@@ -190,14 +194,16 @@ header div {
 }
 
 .box51 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1400px;
+    margin: 50px auto;
 }
 
 .clickbox1 {
-    margin-top: 7px;
     border-radius: 30px;
+    justify-self: center;
     background-color: white;
     width: 400px;
     height: 350px;
@@ -227,26 +233,26 @@ header div {
     background-color: rgb(0, 142, 135);
 }
 
-.button2:hover{
+.button2:hover {
     background-color: rgb(206, 206, 0);
     color: black;
 }
 
 .clickbox2 {
     background-color: rgb(255, 140, 0);
-    margin-top: 10px;
     border-radius: 30px;
     width: 400px;
+    justify-self: center;
     height: 350px;
 }
 
-.title2{
+.title2 {
     font-size: large;
     margin-bottom: 50px;
     color: white;
 }
 
-.letter1{
+.letter1 {
     margin-bottom: 50px;
     color: white;
 }
@@ -259,16 +265,19 @@ header div {
 }
 
 .linkposition1 {
+
     margin-top: 20px;
 }
 
 .box6 {
     padding: 100px;
     display: flex;
+    justify-content: center;
+    gap: 100px;
 }
 
 .box61 {
-    width: 50%;
+    width: 600px;
 }
 
 .imgbox {
@@ -289,7 +298,7 @@ header div {
 
 .box62 {
     padding-left: 20px;
-    width: 50%;
+    width: 500px;
     text-align: left;
 }
 
@@ -347,7 +356,7 @@ header div {
     color: aliceblue;
 }
 
-.submit:hover{
+.submit:hover {
     background-color: rgb(255, 115, 0);
 }
 
@@ -363,6 +372,44 @@ footer {
     background-color: rgb(42, 42, 42);
     text-align: center;
     color: aliceblue;
-    padding: 50px;
-    padding-bottom: 100px;
+    padding: 50px 50px 100px 50px;
+}
+
+
+@media (max-width: 768px) {
+    .box2 {
+        flex-direction: column;
+    }
+
+    .box3 {
+        flex-direction: column;
+    }
+
+    .boximg {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+
+    .box51 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .box6 {
+        flex-direction: column;
+    }
+
+    .imgbox {
+        margin-left: 0px;
+    }
+
+    .linkposition {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .box61 {
+        width: 100%;
+    }
 }
